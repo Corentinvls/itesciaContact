@@ -36,20 +36,22 @@
                     <h3>Gestion</h3>
 
                     <h4>BAC+2 :</h4>
-                    <input type="radio" value="BTS CG" name="formations"><strong>BTS CG</strong>
+                    <input type="radio" id="BTSCG" name="formations"> <label for="BTSCG"><strong>BTS CG</strong></label>
+
 
                     <h4>BAC+3 :</h4>
                     <strong>DCG</strong><br>
-                    <input type="radio" value="DCG L1" name="formations">Entrée en L1
-                    <input type="radio" value="DCG L2" name="formations">Entrée en L2
+                    <input type="radio" id="DCGL1" name="formations"><label for="DCGL1">Entrée en L1</label>
+                    <input type="radio" id="DCGL2" name="formations"><label for="DCGL2">Entrée en L2</label>
 
                     <h4>BAC+4 :</h4>
                     <strong>Contrôleur de Gestion</strong><br>
-                    <input type="radio" value="CG L3" name="formations">Entrée en L3
-                    <input type="radio" value="CG M1" name="formations">Entrée en M1
+                    <input type="radio" id="CGL3" name="formations"><label for="CGL3">Entrée en L3</label>
+                    <input type="radio" id="CGM1" name="formations"><label for="CGM1">Entrée en M1</label>
 
                     <h4>BAC+5 :</h4>
-                    <input type="radio" value="DSCG" name="formations"><strong>DSCG</strong> (Entrée en M1)
+                    <input type="radio" id="DSCG" name="formations"><label for="DSCG"><strong>DSCG</strong> (Entrée en
+                        M1)</label>
                 </div>
 
 
@@ -57,47 +59,45 @@
                     <h3>Management</h3>
                     <h4>BAC+4 :</h4>
                     <strong>Responsable de systèmes de management QHSE</strong><br>
-                    <input type="radio" value="QHSE L3" name="formations">Entrée en L3
-                    <input type="radio" value="QHSE M1" name="formations">Entrée en M1
+                    <input type="radio" id="QHSEL3" name="formations"><label for="QHSEL3">Entrée en L3</label>
+                    <input type="radio" id="QHSEM1" name="formations"><label for="QHSEM1">Entrée en M1</label>
 
                     <br>
                     <strong>Responsable Ressources Humaines</strong><br>
-                    <input type="radio" value="RRH L3" name="formations">Entrée en L3
-                    <input type="radio" value="RRH M1" name="formations">Entrée en M1
+                    <input type="radio" id="RRHL3" name="formations"><label for="RRHL3">Entrée en L3</label>
+                    <input type="radio" id="RRHM1" name="formations"><label for="RRHM1">Entrée en M1</label>
 
                     <h4>BAC+5 :</h4>
-                    <input type="radio" value="MQPI" name="formations"><strong>Manager Qualité et Processus
-                        Intelligents</strong> (Entrée
-                    en M2)
+                    <input type="radio" id="MQPI" name="formations"><label for="MQPI"><strong>Manager Qualité et
+                            Processus Intelligents</strong> (Entrée en M2)</label>
                 </div>
 
                 <div id="informatique" class="formations">
                     <h3>Informatique</h3>
 
                     <h4>BAC+2 :</h4>
-                    <input type="radio" value="SIO" name="formations"><strong>BTS SIO, option SISR ou SLAM</strong>
+                    <input type="radio" id="SIO" name="formations"><strong>BTS SIO, option SISR ou SLAM</strong>
                     <br>
-                    <input type="radio" value="CODEUR" name="formations"><strong>Codeur informatique</strong><br>
-                    <strong>En 3 ans en alternance</strong>
-                    <input type="radio" value="CODEUR CERGY 3ANS" name="formations">à Cergy
-                    <input type="radio" value="CODEUR PARIS 3ANS" name="formations">à Paris
+
+                    <strong>Codeur informatique</strong><br>
+                    <em>En 3 ans en alternance</em>
+                    <input type="radio" id="CODC3" name="formations">à Cergy
+                    <input type="radio" id="CODP3" name="formations">à Paris
                     <br>
-                    <strong>En 1 an en temps plein</strong> (payant)
-                    <input type="radio" value="CODEUR CERGY 1AN" name="formations">à Cergy
-                    <input type="radio" value="CODEUR PARIS 1AN" name="formations">à Paris
+                    <em>En 1 an en temps plein</em> (payant)
+                    <input type="radio" id="CODC1" name="formations">à Cergy
+                    <input type="radio" id="CODP1" name="formations">à Paris
 
 
                     <h4>BAC+3 (en 1 an) :</h4>
-                    <input type="radio" value="LIG" name="formations"><strong>Licence d’Informatique générale</strong>
+                    <input type="radio" id="LIG" name="formations"><strong>Licence d’Informatique générale</strong>
                     <br>
-                    <input type="radio" value="SOLUTION MOBILE" name="formations"><strong>Concepteur développeur de
-                        solutions mobiles et
-                        connectées</strong><br>
-                    <strong>En alternance</strong>
-                    <input type="radio" value="CODEUR CERGY 3ANS" name="formations">à Cergy
+                    <strong>Concepteur développeur de solutions mobiles et connectées</strong><br>
+                    <em>En alternance</em>
+                    <input type="radio" id="MOBILCERGY 3ANS" name="formations">à Cergy
                     <br>
-                    <strong>En temps plein</strong> (payant)
-                    <input type="radio" value="CODEUR PARIS 3ANS" name="formations">à Paris
+                    <em>En temps plein</em> (payant)
+                    <input type="radio" id="CODEUR PARIS 3ANS" name="formations">à Paris
 
 
                 </div>
