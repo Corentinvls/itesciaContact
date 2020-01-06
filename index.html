@@ -30,9 +30,8 @@
 
     <section class="formulaire">
         <article class="colonne">
-
-            <h2>Votre 1er choix de formation à l'ITESCIA :</h2>
-            <form id="premierchoix">
+            <form>
+                <h2>Votre 1er choix de formation à l'ITESCIA :</h2>
                 <div id="gestion" class="formations">
                     <h3>Gestion</h3>
 
@@ -105,56 +104,54 @@
 
                 <div id="continue" class="formations">
                     <h3>Formation continue - VAE</h3>
-                    <form>
 
-                        <label id="CDGLabel"><strong>Contrôleur de Gestion</strong></label>
-                        <input type="radio" id="CDGVAE" name="VAE" value="VAE">
-                        <label for="CDGVAE">VAE</label>
-                        <input type="radio" id="CDGPT" name="VAE" value="Part-time">
-                        <label for="CDGPT">Part-time</label>
-                        <br />
+                    <label id="CDGLabel"><strong>Contrôleur de Gestion</strong></label>
+                    <input type="radio" id="CDGVAE" name="VAE" value="VAE">
+                    <label for="CDGVAE">VAE</label>
+                    <input type="radio" id="CDGPT" name="VAE" value="Part-time">
+                    <label for="CDGPT">Part-time</label>
+                    <br />
 
-                        <label id="RMQHSELabel"><strong>Responsable Management QHSE : </strong></label>
-                        <input type="radio" id="RMQHSEVAE" name="VAE" value="VAE">
-                        <label for="RMQHSEVAE">VAE</label>
-                        <input type="radio" id="RMQHSEPT" name="VAE" value="Part-time">
-                        <label for="RMQHSEPT">Part-time</label>
-                        <br />
+                    <label id="RMQHSELabel"><strong>Responsable Management QHSE : </strong></label>
+                    <input type="radio" id="RMQHSEVAE" name="VAE" value="VAE">
+                    <label for="RMQHSEVAE">VAE</label>
+                    <input type="radio" id="RMQHSEPT" name="VAE" value="Part-time">
+                    <label for="RMQHSEPT">Part-time</label>
+                    <br />
 
-                        <label id="MIILabel"><strong>Manager en Ingénierie Informatique : </strong></label>
-                        <input type="radio" id="MIIVAE" name="VAE" value="VAE">
-                        <label for="MIIVAE">VAE</label>
-                        <input type="radio" id="MIIPT" name="VAE" value="Part-time">
-                        <label for="MIIPT">Part-time</label>
-                        <br />
-                        <label id="BALabel"><strong>Business Analyst </strong></label>
-                        <input type="radio" id="BAPT" name="VAE" value="Part-time">
-                        <label for="BAPT">Part-time</label>
-                        <br />
+                    <label id="MIILabel"><strong>Manager en Ingénierie Informatique : </strong></label>
+                    <input type="radio" id="MIIVAE" name="VAE" value="VAE">
+                    <label for="MIIVAE">VAE</label>
+                    <input type="radio" id="MIIPT" name="VAE" value="Part-time">
+                    <label for="MIIPT">Part-time</label>
+                    <br />
+                    <label id="BALabel"><strong>Business Analyst </strong></label>
+                    <input type="radio" id="BAPT" name="VAE" value="Part-time">
+                    <label for="BAPT">Part-time</label>
+                    <br />
 
-                        <label id="MSRILabel"><strong>Manager de la sécurité des risques de
-                                l’information</strong></label>
-                        <input type="radio" id="MSRIPT" name="VAE" value="Part-time">
-                        <label for="MSRIPT">Part-time</label>
+                    <label id="MSRILabel"><strong>Manager de la sécurité des risques de
+                            l’information</strong></label>
+                    <input type="radio" id="MSRIPT" name="VAE" value="Part-time">
+                    <label for="MSRIPT">Part-time</label>
 
-                        <h4>Votre situation</h4>
+                    <h4>Votre situation</h4>
 
-                        <input type="radio" id="employee" name="situation">
-                        <label for="employee">Salarié(e), de l’entreprise : </label>
-                        <input type="text" id="employeeCompany" name="company">
-                        <br />
-                        <input type="radio" id="seeker" name="situation">
-                        <label for="seeker">Demandeur d’emploi</label>
-                        <br />
-                        <input type="radio" id="individuals" name="situation">
-                        <label for="individuals">Particulier </label>
-                        <br />
-                        <input type="radio" id="other" name="situation">
-                        <label for="other">Autre : </label>
-                        <input type="text" id="otherField" name="other">
+                    <input type="radio" id="employee" name="situation">
+                    <label for="employee">Salarié(e), de l’entreprise : </label>
+                    <input type="text" id="employeeCompany" name="company">
+                    <br />
+                    <input type="radio" id="seeker" name="situation">
+                    <label for="seeker">Demandeur d’emploi</label>
+                    <br />
+                    <input type="radio" id="individuals" name="situation">
+                    <label for="individuals">Particulier </label>
+                    <br />
+                    <input type="radio" id="other" name="situation">
+                    <label for="other">Autre : </label>
+                    <input type="text" id="otherField" name="other">
 
 
-                    </form>
                 </div>
 
             </form>
@@ -168,35 +165,35 @@
             <br>
 
             <label for="name">Nom :</label>
-            <input type="text" name="nom">
+            <input type="text" id="nom">
             <br>
 
             <label for="name">Prénom :</label>
-            <input type="text" name="prénom">
+            <input type="text" id="prenom">
             <br>
 
-            <label for="name">Adresse:</label>
-            <input type="text" name="Adresse">
+            <label for="name">Adresse :</label>
+            <input type="text" id="adresse">
             <br>
 
-            <label for="name">CP:</label>
-            <input type="text" name="prénom">
+            <label for="name">Code postal :</label>
+            <input type="text" id="codepostal">
 
             <label for="name">Ville :</label>
             <input type="text" name="prénom">
             <br>
 
 
-            <label for="name">Tel. fixe :</label>
-            <input type="text" name="telfixe">
+            <label for="name">Téléphone fixe :</label>
+            <input type="tel" name="telfixe">
             <br>
 
             <label for="name">Portable :</label>
-            <input type="text" name="Portable">
+            <input type="tel" name="telportable">
             <br>
 
             <label for="name">Email :</label>
-            <input type="text" name="email">
+            <input type="email" name="email">
             <br>
 
             <label for="name">Date de naissance :</label>

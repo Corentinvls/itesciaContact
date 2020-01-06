@@ -3,7 +3,6 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-
 #topbar {
     height: 10em;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
@@ -74,8 +73,6 @@ nav a:hover {
     size: 2;
     transition: .3s;
     transform: scale(1.1);
-
-
 }
 
 nav ul {
@@ -125,7 +122,16 @@ footer a {
     margin-bottom: 1.5em;
     border-left: 6px solid gray;
     background-color: lightgray;
+    transition: .7s;
 
+
+}
+
+.formations:hover {
+    transition: .7s;
+    -webkit-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
 }
 
 #gestion {
@@ -148,7 +154,10 @@ footer a {
 }
 
 
-input[type=text] {
+
+input[type=text],
+input[type=tel],
+input[type=email] {
     /*border: none;
     border-left: 2px solid red;
     background-color: lightpink;
@@ -164,7 +173,16 @@ input[type=text] {
     transition: .3s;
 }
 
-input[type=text]:focus {
+input[type=text]:invalid,
+input[type=tel]:invalid,
+input[type=email]:invalid {
+    box-shadow: none;
+    background-color: salmon;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus {
     border-color: #CA1F29;
 }
 
