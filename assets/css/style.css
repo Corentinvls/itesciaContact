@@ -76,7 +76,7 @@ nav ul {
 }
 
 @media screen and (max-width: 600px) {
-    .column {
+    .colonne {
         width: 100%;
     }
 }
@@ -93,4 +93,48 @@ footer {
 footer a {
     color: #CA1F29;
     text-decoration: none;
+}
+
+.formations {
+    /*border-radius: 10px;*/
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-left: 6px solid gray;
+    background-color: lightgray;
+
+}
+
+#gestion {
+    /*background-color: orange;*/
+    border-left: 6px solid #F69D25;
+    background-color: #ffe7c7;
+
+}
+
+#management {
+    border-left: 6px solid #C6D300;
+    background-color: #f6fab4;
+}
+
+#informatique {
+    border-left: 6px solid #23B8ED;
+    background-color: #bce8f7;
+}
+
+#continue {
+    border-left: 6px solid lightcoral;
+    background-color: #f7c3c3;
+}
+
+h3 {
+    font-weight: 900;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+}
+
+h4 {
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    color: #CA1F29;
+    font-weight: lighter;
 }
