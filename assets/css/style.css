@@ -108,22 +108,26 @@ footer a {
     /*background-color: orange;*/
     border-left: 6px solid #F69D25;
     background-color: #ffe7c7;
+    border-radius: 10px;
 
 }
 
 #management {
     border-left: 6px solid #C6D300;
     background-color: #f6fab4;
+    border-radius: 10px;
 }
 
 #informatique {
     border-left: 6px solid #23B8ED;
     background-color: #bce8f7;
+    border-radius: 10px;
 }
 
 #continue {
     border-left: 6px solid lightcoral;
     background-color: #f7c3c3;
+    border-radius: 10px;
 }
 
 h3 {
