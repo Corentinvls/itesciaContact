@@ -1,5 +1,5 @@
 body {
-
+    margin: 0;
     font-family: 'Overpass', sans-serif;
 
 }
@@ -10,32 +10,50 @@ body {
 }
 
 #topbar {
-    height: 200px;
+    height: 10em;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
+    backdrop-filter: blur(10px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: right;
+    background-position-y: 20%;
+    padding: 10px;
+
 }
 
-#navbar {
+nav {
     width: 100%;
     background-color: #CA1F29;
     color: white;
+    float: left;
+
 }
 
-#navbar a {
+nav li {
+    float: left;
+}
+
+nav a {
     color: white;
     text-decoration: none;
     display: inline-block;
-    padding: 8px;
+    padding: 0.5em;
     font-size: 1.5em;
 }
 
-#navbar a:hover {
-    color: gray;
+nav a:hover {
+    /*background-color: rgb(88, 16, 21);*/
+    background-color: #eee0e0 !important;
+    color: #000;
 
 }
 
 
 
-#navbar ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
