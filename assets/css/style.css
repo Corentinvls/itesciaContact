@@ -80,3 +80,17 @@ nav ul {
         width: 100%;
     }
 }
+
+footer {
+    color: white;
+    background-color: #42494F;
+    padding: 0.3em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: smaller;
+}
+
+footer a {
+    color: #CA1F29;
+    text-decoration: none;
+}
