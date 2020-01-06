@@ -37,20 +37,20 @@
                     <h3>Gestion</h3>
 
                     <h4>BAC+2 :</h4>
-                    <input type="radio" value="BTS CG"><strong>BTS CG</strong>
+                    <input type="radio" value="BTS CG" name="formations"><strong>BTS CG</strong>
 
                     <h4>BAC+3 :</h4>
                     <strong>DCG</strong><br>
-                    <input type="radio" value="DCG L1">Entrée en L1
-                    <input type="radio" value="DCG L2">Entrée en L2
+                    <input type="radio" value="DCG L1" name="formations">Entrée en L1
+                    <input type="radio" value="DCG L2" name="formations">Entrée en L2
 
                     <h4>BAC+4 :</h4>
                     <strong>Contrôleur de Gestion</strong><br>
-                    <input type="radio" value="CG L3">Entrée en L3
-                    <input type="radio" value="CG M1">Entrée en M1
+                    <input type="radio" value="CG L3" name="formations">Entrée en L3
+                    <input type="radio" value="CG M1" name="formations">Entrée en M1
 
                     <h4>BAC+5 :</h4>
-                    <input type="radio" value="DSCG"><strong>DSCG</strong> (Entrée en M1)
+                    <input type="radio" value="DSCG" name="formations"><strong>DSCG</strong> (Entrée en M1)
                 </div>
 
 
@@ -58,16 +58,17 @@
                     <h3>Management</h3>
                     <h4>BAC+4 :</h4>
                     <strong>Responsable de systèmes de management QHSE</strong><br>
-                    <input type="radio" value="QHSE L3">Entrée en L3
-                    <input type="radio" value="QHSE M1">Entrée en M1
+                    <input type="radio" value="QHSE L3" name="formations">Entrée en L3
+                    <input type="radio" value="QHSE M1" name="formations">Entrée en M1
 
                     <br>
                     <strong>Responsable Ressources Humaines</strong><br>
-                    <input type="radio" value="RRH L3">Entrée en L3
-                    <input type="radio" value="RRH M1">Entrée en M1
+                    <input type="radio" value="RRH L3" name="formations">Entrée en L3
+                    <input type="radio" value="RRH M1" name="formations">Entrée en M1
 
                     <h4>BAC+5 :</h4>
-                    <input type="radio" value="MQPI"><strong>Manager Qualité et Processus Intelligents</strong> (Entrée
+                    <input type="radio" value="MQPI" name="formations"><strong>Manager Qualité et Processus
+                        Intelligents</strong> (Entrée
                     en M2)
                 </div>
 
@@ -75,79 +76,84 @@
                     <h3>Informatique</h3>
 
                     <h4>BAC+2 :</h4>
-                    <input type="radio" value="SIO"><strong>BTS SIO, option SISR ou SLAM</strong>
+                    <input type="radio" value="SIO" name="formations"><strong>BTS SIO, option SISR ou SLAM</strong>
                     <br>
-                    <input type="radio" value="CODEUR"><strong>Codeur informatique</strong><br>
+                    <input type="radio" value="CODEUR" name="formations"><strong>Codeur informatique</strong><br>
                     <strong>En 3 ans en alternance</strong>
-                    <input type="radio" value="CODEUR CERGY 3ANS">à Cergy
-                    <input type="radio" value="CODEUR PARIS 3ANS">à Paris
+                    <input type="radio" value="CODEUR CERGY 3ANS" name="formations">à Cergy
+                    <input type="radio" value="CODEUR PARIS 3ANS" name="formations">à Paris
                     <br>
                     <strong>En 1 an en temps plein</strong> (payant)
-                    <input type="radio" value="CODEUR CERGY 1AN">à Cergy
-                    <input type="radio" value="CODEUR PARIS 1AN">à Paris
+                    <input type="radio" value="CODEUR CERGY 1AN" name="formations">à Cergy
+                    <input type="radio" value="CODEUR PARIS 1AN" name="formations">à Paris
 
 
                     <h4>BAC+3 (en 1 an) :</h4>
-                    <input type="radio" value="LIG"><strong>Licence d’Informatique générale</strong>
+                    <input type="radio" value="LIG" name="formations"><strong>Licence d’Informatique générale</strong>
                     <br>
-                    <input type="radio" value="SOLUTION MOBILE"><strong>Concepteur développeur de solutions mobiles et
+                    <input type="radio" value="SOLUTION MOBILE" name="formations"><strong>Concepteur développeur de
+                        solutions mobiles et
                         connectées</strong><br>
                     <strong>En alternance</strong>
-                    <input type="radio" value="CODEUR CERGY 3ANS">à Cergy
+                    <input type="radio" value="CODEUR CERGY 3ANS" name="formations">à Cergy
                     <br>
                     <strong>En temps plein</strong> (payant)
-                    <input type="radio" value="CODEUR PARIS 3ANS">à Paris
+                    <input type="radio" value="CODEUR PARIS 3ANS" name="formations">à Paris
 
 
                 </div>
+
                 <div id="continue" class="formations">
                     <h3>Formation continue - VAE</h3>
                     <form>
 
-                        <label id="CDGLabel">Contrôleur de Gestion</label>
+                        <label id="CDGLabel"><strong>Contrôleur de Gestion</strong></label>
                         <input type="radio" id="CDGVAE" name="VAE" value="VAE">
                         <label for="CDGVAE">VAE</label>
                         <input type="radio" id="CDGPT" name="VAE" value="Part-time">
                         <label for="CDGPT">Part-time</label>
                         <br />
 
-                        <label id="RMQHSELabel">Responsable  Management  QHSE : </label>
+                        <label id="RMQHSELabel"><strong>Responsable Management QHSE : </strong></label>
                         <input type="radio" id="RMQHSEVAE" name="VAE" value="VAE">
                         <label for="RMQHSEVAE">VAE</label>
                         <input type="radio" id="RMQHSEPT" name="VAE" value="Part-time">
                         <label for="RMQHSEPT">Part-time</label>
                         <br />
 
-                        <label id="MIILabel">Manager en Ingénierie  Informatique  : </label>
+                        <label id="MIILabel"><strong>Manager en Ingénierie Informatique : </strong></label>
                         <input type="radio" id="MIIVAE" name="VAE" value="VAE">
                         <label for="MIIVAE">VAE</label>
                         <input type="radio" id="MIIPT" name="VAE" value="Part-time">
                         <label for="MIIPT">Part-time</label>
                         <br />
-                        <label id="BALabel">Business Analyst  </label>
+                        <label id="BALabel"><strong>Business Analyst </strong></label>
                         <input type="radio" id="BAPT" name="VAE" value="Part-time">
                         <label for="BAPT">Part-time</label>
                         <br />
 
-                        <label id="MSRILabel">Manager de la sécurité des risques de l’information </label>
+                        <label id="MSRILabel"><strong>Manager de la sécurité des risques de
+                                l’information</strong></label>
                         <input type="radio" id="MSRIPT" name="VAE" value="Part-time">
                         <label for="MSRIPT">Part-time</label>
 
                         <h4>Votre situation</h4>
 
-                        <input type="radio" id="employee" name="situation" >
-                        <label for="employee">Salarié(e),  de  l’entreprise  : </label>
-                        <input type="text" id="employeeCompany" name="company" >
+                        <input type="radio" id="employee" name="situation">
+                        <label for="employee">Salarié(e), de l’entreprise : </label>
+                        <input type="text" id="employeeCompany" name="company">
                         <br />
-                        <input type="radio" id="seeker" name="situation" >
-                        <label for="seeker">Demandeur  d’emploi</label>
+                        <input type="radio" id="seeker" name="situation">
+                        <label for="seeker">Demandeur d’emploi</label>
                         <br />
-                        <input type="radio" id="individuals" name="situation" >
+                        <input type="radio" id="individuals" name="situation">
                         <label for="individuals">Particulier </label>
                         <br />
-                        <input type="radio" id="other" name="otherCheck" >
+                        <input type="radio" id="other" name="situation">
                         <label for="other">Autre : </label>
-                        <input type="text" id="otherField" name="other" >
+                        <input type="text" id="otherField" name="other">
+
+
                     </form>
                 </div>
 
@@ -250,6 +256,10 @@
                 <br />
 
             </form>
+
+            <br>
+
+
         </article>
     </section>
 
