@@ -236,7 +236,6 @@ input[type=submit] {
     padding: 0.7em;
     margin: 1em;
     font-size: x-large;
-    font-family: "Overpass", sans-serif;
     transition: .3s;
 
 }
@@ -251,18 +250,83 @@ input[type=submit]:invalid {
     color: gainsboro;
 }
 
-#grade {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    /*padding: 20px;*/
+
+/* ronds à cliquer */
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background: white;
+    color: #CA1F29;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 7px;
+    box-shadow: 0 1px #CA1F29, 1px 0 #CA1F29, 1px 1px #CA1F29;
+    transition: .3s;
+
 }
 
+input[type=radio]:hover {
+    transition: .3s;
+    background-color: #efbbbe;
+}
+
+input[type=radio]:checked::before {
+    position: absolute;
+    font: 16px/1 'Overpass', sans-serif;
+    left: 4px;
+    top: 2px;
+    content: '\02143';
+    transform: rotate(40deg);
+    transition: .3s;
+
+}
+
+/* menus déroulants */
+select,
+input[type=date] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* on retire la fleche de base pour rajouter la notre */
+    font-family: 'Overpass', sans-serif;
+    width: 10%;
+    overflow: auto;
+    border: 2px solid #E0E2EE;
+    border-radius: 4px;
+    padding: 6px;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+select:focus {
+    border-color: #CA1F29;
+}
+
+select {
+    min-width: 110px;
+
+    background: url("/assets/images/fleche.svg") 96% / 15% no-repeat #ffffff;
+}
+
+input[type=date] {
+    min-width: 120px;
+}
+
+/* texte des boutons, champs de texte...*/
 label {
     display: inline-block;
     margin-top: 1em;
     margin-bottom: 0.2em;
 }
 
+/* pour les labels dans les choix de formations (à gauche)*/
 .formations label {
     margin-top: 0em;
 }
