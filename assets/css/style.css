@@ -1,8 +1,10 @@
+/* toute la page, définition de la police */
 body {
     margin: 0;
     font-family: 'Overpass', sans-serif;
 }
 
+/* barre avec le logo et nom de la page */
 #topbar {
     height: fit-content;
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
@@ -15,12 +17,14 @@ body {
     padding: 10px;
 }
 
+/* logo ITESCIA */
 #logo {
     max-height: 10em;
     height: 100%;
     width: auto;
 }
 
+/* titre de la page à côté du logo */
 h1 {
     display: inline;
     padding: 10px;
@@ -28,6 +32,7 @@ h1 {
     /*color: #8B9BBC;*/
 }
 
+/* si on est sur mobile */
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 1.5em;
@@ -148,8 +153,6 @@ footer a {
     border-left: 6px solid gray;
     background-color: lightgray;
     transition: .2s;
-
-
 }
 
 .formations:hover {
@@ -198,6 +201,8 @@ input[type=email] {
     transition: .1s;
 }
 
+
+
 input[type=text]:invalid,
 input[type=tel]:invalid,
 input[type=email]:invalid {
@@ -205,10 +210,41 @@ input[type=email]:invalid {
     background-color: #efbbbe;
 }
 
+
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
     border-color: #CA1F29;
+}
+
+/* div contenant le bouton submit pour le centrer dans la page*/
+#wrap-bouton {
+    text-align: center;
+}
+
+/* Bouton submit en bas de page */
+input[type=submit] {
+    border-radius: 8px;
+    border: none;
+    width: 50%;
+    background-color: #CA1F29;
+    color: white;
+    padding: 0.7em;
+    margin: 1em;
+    font-size: x-large;
+    font-family: "Overpass", sans-serif;
+    transition: .3s;
+
+}
+
+input[type=submit]:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+input[type=submit]:invalid {
+    background-color: gray;
+    color: gainsboro;
 }
 
 #grade {

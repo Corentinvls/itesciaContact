@@ -30,7 +30,7 @@
 
     <section class="formulaire">
         <article class="colonne">
-            <form>
+            <form method="POST" id="formcontact">
                 <h2>Votre 1er choix de formation à l'ITESCIA :</h2>
                 <div id="gestion" class="formations">
                     <h3>Gestion</h3>
@@ -153,8 +153,6 @@
 
                 </div>
 
-            </form>
-
         </article>
         <article class="colonne">
             <h2>Vos coordonnées :</h2>
@@ -164,11 +162,11 @@
             <br>
 
             <label for="nom">Nom :</label>
-            <input type="text" id="nom">
+            <input type="text" id="nom" required>
             <br>
 
             <label for="prenom">Prénom :</label>
-            <input type="text" id="prenom">
+            <input type="text" id="prenom" required>
             <br>
 
             <label for="adresse">Adresse :</label>
@@ -188,11 +186,11 @@
             <br>
 
             <label for="telportable">Portable :</label>
-            <input type="tel" name="telportable">
+            <input type="tel" name="telportable" required>
             <br>
 
             <label for="email">Email :</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <br>
 
             <label for="datenaissance">Date de naissance :</label>
@@ -205,57 +203,60 @@
 
 
             <h2>Votre scolarité :</h2>
-            <form>
-                <label id="gradeLabel">Niveau de formation actuel : </label>
-                <select id="grade" name="grade">
-                    <option value="CAP, BEP">CAP, BEP</option>
-                    <option value="Bac">Baccalauréat</option>
-                    <option value="Bac+2">Bac+2</option>
-                    <option value="Bac+3">Bac+3</option>
-                    <option value="Bac+4">Bac+4</option>
-                    <option value="Bac+5">Bac+5</option>
-                    <option value="Bac+8">Bac+8</option>
-                    <option value="Autre">Autre</option>
-                </select>
-                <br />
-                <label id="gradeOther">Autre : </label>
-                <input type="text" id="gradeOtherField">
-                <br />
-                <label id="lastSchool">Etablissement actuel (nom et ville) : </label>
-                <input type="text" id="lastSchoolField">
-                <br />
-                <label id="lastDegree">Dernier diplôme obtenu : </label>
-                <input type="text" id="lastDegreeField">
-
-            </form>
+            <label id="gradeLabel">Niveau de formation actuel : </label>
+            <select id="grade" name="grade">
+                <option value="CAP, BEP">CAP, BEP</option>
+                <option value="Bac">Baccalauréat</option>
+                <option value="Bac+2">Bac+2</option>
+                <option value="Bac+3">Bac+3</option>
+                <option value="Bac+4">Bac+4</option>
+                <option value="Bac+5">Bac+5</option>
+                <option value="Bac+8">Bac+8</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <br />
+            <label id="gradeOther">Autre : </label>
+            <input type="text" id="gradeOtherField">
+            <br />
+            <label id="lastSchool">Etablissement actuel (nom et ville) : </label>
+            <input type="text" id="lastSchoolField">
+            <br />
+            <label id="lastDegree">Dernier diplôme obtenu : </label>
+            <input type="text" id="lastDegreeField">
 
             <h2>Vos autres souhaits de formation à ITESCIA :</h2>
-            <form>
 
-                <label id="secondChoice">N°2 : </label>
-                <input type="text" id="secondChoiceField">
-                <br />
-                <label id="thirdChoice">N°3 : </label>
-                <input type="text" id="thirdChoiceField">
-                <br />
+            <label id="secondChoice">N°2 : </label>
+            <input type="text" id="secondChoiceField">
+            <br/>
+            <label id="thirdChoice">N°3 : </label>
+            <input type="text" id="thirdChoiceField">
+            <br/>
 
-            </form>
 
             <h2>Votre parrain à ITESCIA :</h2>
-            <form>
 
-                <label id="nameReferrer">Nom, prénom</label>
-                <input type="text" id="nameReferrerField">
-                <br />
-                <label id="formationReferrer">Formation suivie : </label>
-                <input type="text" id="formationReferrerField">
-                <br />
+            <label id="nameReferrer">Nom, prénom</label>
+            <input type="text" id="nameReferrerField">
+            <br />
+            <label id="formationReferrer">Formation suivie : </label>
+            <input type="text" id="formationReferrerField">
+            <br />
 
             </form>
 
             <br>
 
         </article>
+
+
+    </section>
+
+    <section>
+        <div id="wrap-bouton">
+            <input type="submit" form="formcontact" id="envoi"></input>
+        </div>
+
     </section>
 
     <footer>
