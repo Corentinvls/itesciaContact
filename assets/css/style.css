@@ -1,188 +1,188 @@
 /* toute la page, définition de la police */
 body {
-    margin: 0;
-    font-family: 'Overpass', sans-serif;
+	margin: 0;
+	font-family: 'Overpass', sans-serif;
 }
 
 /* barre avec le logo et nom de la page */
 #topbar {
-    height: fit-content;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
-    backdrop-filter: blur(10px);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position-x: right;
-    background-position-y: 20%;
-    padding: 10px;
+	height: fit-content;
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
+	backdrop-filter: blur(10px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position-x: right;
+	background-position-y: 20%;
+	padding: 10px;
 }
 
 /* logo ITESCIA */
 #logo {
-    max-height: 10em;
-    height: 100%;
-    width: auto;
+	max-height: 10em;
+	height: 100%;
+	width: auto;
 }
 
 /* titre de la page à côté du logo */
 h1 {
-    display: inline;
-    padding: 10px;
-    font-weight: 500;
-    /*color: #8B9BBC;*/
+	display: inline;
+	padding: 10px;
+	font-weight: 500;
+	/*color: #8B9BBC;*/
 }
 
 /* si on est sur mobile */
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
-    }
+	h1 {
+		font-size: 1.5em;
+	}
 
-    #logo {
-        max-height: 1.5em;
-        height: 100%;
-        width: auto;
-    }
+	#logo {
+		max-height: 1.5em;
+		height: 100%;
+		width: auto;
+	}
 
-    #topbar {
-        min-height: fit-content;
-        background: white;
-    }
+	#topbar {
+		min-height: fit-content;
+		background: white;
+	}
 }
 
 
 h2 {
-    font-weight: 200;
+	font-weight: 200;
 }
 
 h3 {
-    font-weight: 900;
-    margin-bottom: 0.4em;
-    margin-top: 0.4em;
+	font-weight: 900;
+	margin-bottom: 0.4em;
+	margin-top: 0.4em;
 }
 
 h4 {
-    margin-bottom: 0.4em;
-    margin-top: 0.4em;
-    color: #CA1F29;
-    font-weight: lighter;
+	margin-bottom: 0.4em;
+	margin-top: 0.4em;
+	color: #CA1F29;
+	font-weight: lighter;
 }
 
 nav {
-    width: 100%;
-    background-color: #CA1F29;
-    color: white;
-    float: left;
+	width: 100%;
+	background-color: #CA1F29;
+	color: white;
+	float: left;
 
-    -webkit-box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
-    -moz-box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
+	-webkit-box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
+	-moz-box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
+	box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
 
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 
 }
 
 nav li {
-    display: inline-block
+	display: inline-block
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.5em;
-    font-size: 1.5em;
-    transition: .3s;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 1.5em;
+	transition: .3s;
 
 }
 
 nav a:hover {
-    /*background-color: rgb(88, 16, 21);*/
-    background-color: #eee0e0 !important;
-    color: #000;
-    size: 2;
-    transition: .3s;
-    transform: scale(1.1);
+	/*background-color: rgb(88, 16, 21);*/
+	background-color: #eee0e0 !important;
+	color: #000;
+	size: 2;
+	transition: .3s;
+	transform: scale(1.1);
 }
 
 ul {
-    list-style-type: none;
+	list-style-type: none;
 
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 
 .formulaire {
-    display: flex;
-    width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .colonne {
-    padding: 0.5em;
-    flex: 50%;
+	padding: 0.5em;
+	flex: 50%;
 }
 
 @media screen and (max-width: 600px) {
-    .colonne {
-        width: 97%;
-    }
+	.colonne {
+		width: 97%;
+	}
 
-    .formulaire {
-        display: inline;
-    }
+	.formulaire {
+		display: inline;
+	}
 }
 
 footer {
-    color: white;
-    background-color: #42494F;
-    padding: 0.3em;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
-    font-size: smaller;
+	color: white;
+	background-color: #42494F;
+	padding: 0.3em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	font-size: smaller;
 }
 
 footer a {
-    color: #CA1F29;
-    text-decoration: none;
+	color: #CA1F29;
+	text-decoration: none;
 }
 
 .formations {
-    border-radius: 10px;
-    padding: 0.5em;
-    margin-bottom: 1.5em;
-    border-left: 6px solid gray;
-    background-color: lightgray;
-    transition: .2s;
+	border-radius: 10px;
+	padding: 0.5em;
+	margin-bottom: 1.5em;
+	border-left: 6px solid gray;
+	background-color: lightgray;
+	transition: .2s;
 }
 
 .formations:hover {
-    transition: .2s;
-    -webkit-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
-    -moz-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
-    box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
+	transition: .2s;
+	-webkit-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
+	box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
 }
 
 #gestion {
-    border-left: 6px solid #F69D25;
-    background-color: #ffe7c7;
-    border-radius: 10px;
+	border-left: 6px solid #F69D25;
+	background-color: #ffe7c7;
+	border-radius: 10px;
 
 }
 
 #management {
-    border-left: 6px solid #C6D300;
-    background-color: #f6fab4;
-    border-radius: 10px;
+	border-left: 6px solid #C6D300;
+	background-color: #f6fab4;
+	border-radius: 10px;
 }
 
 #informatique {
-    border-left: 6px solid #23B8ED;
-    background-color: #bce8f7;
-    border-radius: 10px;
+	border-left: 6px solid #23B8ED;
+	background-color: #bce8f7;
+	border-radius: 10px;
 }
 
 
@@ -190,143 +190,154 @@ footer a {
 input[type=text],
 input[type=tel],
 input[type=email] {
-    /*border: none;
+	/*border: none;
     border-left: 2px solid red;
     background-color: lightpink;
     width: max-content;*/
 
-    width: 100%;
-    border: 2px solid #E0E2EE;
-    border-radius: 4px;
-    margin-bottom: 3px;
-    outline: none;
-    padding: 6px;
-    box-sizing: border-box;
-    transition: .1s;
+	width: 100%;
+	border: 2px solid #E0E2EE;
+	border-radius: 4px;
+	margin-bottom: 3px;
+	outline: none;
+	padding: 6px;
+	box-sizing: border-box;
+	transition: .1s;
 }
 
 
-
+/* si contenu incorrect dans champ texte */
 input[type=text]:invalid,
 input[type=tel]:invalid,
 input[type=email]:invalid {
-    box-shadow: none;
-    background-color: #efbbbe;
+	box-shadow: none;
+	background-color: #efbbbe;
+	/* fond rose/rouge pour indiquer à l'utilisateur */
 }
 
 
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-    border-color: #CA1F29;
+	border-color: #CA1F29;
 }
 
 /* div contenant le bouton submit pour le centrer dans la page*/
 #wrap-bouton {
-    text-align: center;
+	text-align: center;
 }
 
 /* Bouton submit en bas de page */
 input[type=submit] {
-    border-radius: 8px;
-    border: none;
-    width: 50%;
-    background-color: #CA1F29;
-    color: white;
-    padding: 0.7em;
-    margin: 1em;
-    font-size: x-large;
-    transition: .3s;
+	border-radius: 8px;
+	border: none;
+	width: 50%;
+	background-color: #CA1F29;
+	color: white;
+	padding: 0.7em;
+	margin: 1em;
+	font-size: x-large;
+	transition: .3s;
+	font-family: 'Overpass', sans-serif;
 
 }
 
+/* Survol du submit */
 input[type=submit]:hover {
-    transition: .3s;
-    transform: scale(1.1);
+	transition: .3s;
+	transform: scale(1.1);
 }
 
+/* Si le submit est invalide (INUTILISE)*/
 input[type=submit]:invalid {
-    background-color: gray;
-    color: gainsboro;
+	background-color: gray;
+	color: gainsboro;
 }
 
 
 /* ronds à cliquer */
 input[type=radio] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    position: relative;
-    background: white;
-    color: #CA1F29;
-    top: 5px;
-    height: 20px;
-    width: 20px;
-    border: 0;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-right: 7px;
-    box-shadow: 0 1px #CA1F29, 1px 0 #CA1F29, 1px 1px #CA1F29;
-    transition: .3s;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	position: relative;
+	background: white;
+	color: #CA1F29;
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 7px;
+	box-shadow: 0 1px #CA1F29, 1px 0 #CA1F29, 1px 1px #CA1F29;
+	transition: .3s;
 
 }
 
+/* survol des ronds */
 input[type=radio]:hover {
-    transition: .3s;
-    background-color: #efbbbe;
+	transition: .3s;
+	background-color: #efbbbe;
 }
 
+/* ajout de la checkmark au rond cliqué */
 input[type=radio]:checked::before {
-    position: absolute;
-    font: 16px/1 'Overpass', sans-serif;
-    left: 4px;
-    top: 2px;
-    content: '\02143';
-    transform: rotate(40deg);
-    transition: .3s;
+	position: absolute;
+	font: 16px/1 'Overpass', sans-serif;
+	left: 4px;
+	top: 2px;
+	content: '\02143';
+	/* suite de caractères de la checkmark */
+	transform: rotate(40deg);
+	/* rotate car sinon la checkmark est à un angle droit*/
+	transition: .3s;
 
 }
 
 /* menus déroulants */
 select,
 input[type=date] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /* on retire la fleche de base pour rajouter la notre */
-    font-family: 'Overpass', sans-serif;
-    width: 10%;
-    overflow: auto;
-    border: 2px solid #E0E2EE;
-    border-radius: 4px;
-    padding: 6px;
-    box-sizing: border-box;
-    transition: .2s;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* on retire la fleche de base pour rajouter la notre */
+
+	font-family: 'Overpass', sans-serif;
+	width: 10%;
+	overflow: auto;
+	border: 2px solid #E0E2EE;
+	border-radius: 4px;
+	padding: 6px;
+	box-sizing: border-box;
+	transition: .2s;
 }
 
+/* menu déroulant séléctionné */
 select:focus {
-    border-color: #CA1F29;
+	border-color: #CA1F29;
 }
 
+/* ajout de la flèche personnalisée au rond cliqué */
 select {
-    min-width: 110px;
-
-    background: url("/assets/images/fleche.svg") 96% / 15% no-repeat #ffffff;
+	min-width: 110px;
+	/* ajout de la flèche personnalisée au rond cliqué */
+	background: url("/assets/images/fleche.svg") 96% / 15% no-repeat #ffffff;
 }
 
 input[type=date] {
-    min-width: 120px;
+	min-width: 120px;
 }
 
 /* texte des boutons, champs de texte...*/
 label {
-    display: inline-block;
-    margin-top: 1em;
-    margin-bottom: 0.2em;
+	display: inline-block;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
 }
 
 /* pour les labels dans les choix de formations (à gauche)*/
 .formations label {
-    margin-top: 0em;
+	margin-top: 0em;
 }
