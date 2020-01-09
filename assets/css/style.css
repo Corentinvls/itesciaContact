@@ -7,7 +7,8 @@ body {
 /* barre avec le logo et nom de la page */
 #topbar {
 	height: fit-content;
-	background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%), url("../../assets/images/adult.jpg") center center;
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, white 84.7%),
+		url("../../assets/images/adult.jpg") center center;
 	backdrop-filter: blur(10px);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -34,6 +35,8 @@ h1 {
 
 /* si on est sur mobile */
 @media screen and (max-width: 600px) {
+	/*on retire le fond et réduit la taille du header */
+
 	h1 {
 		font-size: 1.5em;
 	}
@@ -50,27 +53,29 @@ h1 {
 	}
 }
 
-
+/* titre de partie de formulaire */
 h2 {
 	font-weight: 200;
 }
 
+/* titre de section de formation */
 h3 {
 	font-weight: 900;
 	margin-bottom: 0.4em;
 	margin-top: 0.4em;
 }
-
+/* titre de formation */
 h4 {
 	margin-bottom: 0.4em;
 	margin-top: 0.4em;
-	color: #CA1F29;
+	color: #ca1f29;
 	font-weight: lighter;
 }
 
+/* menu de navigation */
 nav {
 	width: 100%;
-	background-color: #CA1F29;
+	background-color: #ca1f29;
 	color: white;
 	float: left;
 
@@ -79,13 +84,14 @@ nav {
 	box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.16);
 
 	margin-bottom: 5px;
-
 }
 
+/* éléments du menu de navigation */
 nav li {
-	display: inline-block
+	display: inline-block;
 }
 
+/* liens du menu de navigation */
 nav a {
 	color: white;
 	text-decoration: none;
@@ -93,9 +99,9 @@ nav a {
 	padding: 0.5em;
 	font-size: 1.5em;
 	transition: .3s;
-
 }
 
+/* survol des liens du menu de navigation */
 nav a:hover {
 	/*background-color: rgb(88, 16, 21);*/
 	background-color: #eee0e0 !important;
@@ -105,28 +111,32 @@ nav a:hover {
 	transform: scale(1.1);
 }
 
+/* suppression des points à toutes les listes non ordonnées */
 ul {
 	list-style-type: none;
-
 }
 
+/* suppression des bordures et marges à tous les blocks de liste */
 nav ul {
 	margin: 0;
 	padding: 0;
 }
 
-
+/* conteneur des deux colonnes */
 .formulaire {
 	display: flex;
 	width: 100%;
 }
 
+/* colonne du formulaire */
 .colonne {
 	padding: 0.5em;
 	flex: 50%;
 }
 
+/* quand le site est sur mobile */
 @media screen and (max-width: 600px) {
+	/* on passe à une seule colonne */
 	.colonne {
 		width: 97%;
 	}
@@ -136,20 +146,23 @@ nav ul {
 	}
 }
 
+/* pied de page du site */
 footer {
 	color: white;
-	background-color: #42494F;
+	background-color: #42494f;
 	padding: 0.3em;
 	padding-top: 0.7em;
 	padding-bottom: 0.7em;
 	font-size: smaller;
 }
 
+/* lien du pied de page */
 footer a {
-	color: #CA1F29;
+	color: #ca1f29;
 	text-decoration: none;
 }
 
+/* bloc de base pour les formations */
 .formations {
 	border-radius: 10px;
 	padding: 0.5em;
@@ -159,6 +172,7 @@ footer a {
 	transition: .2s;
 }
 
+/* survol du bloc de base pour les formations */
 .formations:hover {
 	transition: .2s;
 	-webkit-box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
@@ -166,27 +180,28 @@ footer a {
 	box-shadow: 0px 13px 25px 3px rgba(0, 0, 0, 0.20);
 }
 
+/* couleur du bloc gestion */
 #gestion {
-	border-left: 6px solid #F69D25;
+	border-left: 6px solid #f69d25;
 	background-color: #ffe7c7;
 	border-radius: 10px;
-
 }
 
+/* couleur du bloc management */
 #management {
-	border-left: 6px solid #C6D300;
+	border-left: 6px solid #c6d300;
 	background-color: #f6fab4;
 	border-radius: 10px;
 }
 
+/* couleur du bloc informatique */
 #informatique {
-	border-left: 6px solid #23B8ED;
+	border-left: 6px solid #23b8ed;
 	background-color: #bce8f7;
 	border-radius: 10px;
 }
 
-
-
+/* champs de texte */
 input[type=text],
 input[type=tel],
 input[type=email] {
@@ -196,7 +211,7 @@ input[type=email] {
     width: max-content;*/
 
 	width: 100%;
-	border: 2px solid #E0E2EE;
+	border: 2px solid #e0e2ee;
 	border-radius: 4px;
 	margin-bottom: 3px;
 	outline: none;
@@ -204,7 +219,6 @@ input[type=email] {
 	box-sizing: border-box;
 	transition: .1s;
 }
-
 
 /* si contenu incorrect dans champ texte */
 input[type=text]:invalid,
@@ -215,11 +229,11 @@ input[type=email]:invalid {
 	/* fond rose/rouge pour indiquer à l'utilisateur */
 }
 
-
+/* quand on séléctionne le champ de texte */
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus {
-	border-color: #CA1F29;
+	border-color: #ca1f29;
 }
 
 /* div contenant le bouton submit pour le centrer dans la page*/
@@ -232,14 +246,13 @@ input[type=submit] {
 	border-radius: 8px;
 	border: none;
 	width: 50%;
-	background-color: #CA1F29;
+	background-color: #ca1f29;
 	color: white;
 	padding: 0.7em;
 	margin: 1em;
 	font-size: x-large;
 	transition: .3s;
 	font-family: 'Overpass', sans-serif;
-
 }
 
 /* Survol du submit */
@@ -254,7 +267,6 @@ input[type=submit]:invalid {
 	color: gainsboro;
 }
 
-
 /* ronds à cliquer */
 input[type=radio] {
 	-webkit-appearance: none;
@@ -263,7 +275,7 @@ input[type=radio] {
 	display: inline-block;
 	position: relative;
 	background: white;
-	color: #CA1F29;
+	color: #ca1f29;
 	top: 5px;
 	height: 20px;
 	width: 20px;
@@ -271,9 +283,8 @@ input[type=radio] {
 	border-radius: 50px;
 	cursor: pointer;
 	margin-right: 7px;
-	box-shadow: 0 1px #CA1F29, 1px 0 #CA1F29, 1px 1px #CA1F29;
+	box-shadow: 0 1px #ca1f29, 1px 0 #ca1f29, 1px 1px #ca1f29;
 	transition: .3s;
-
 }
 
 /* survol des ronds */
@@ -293,7 +304,6 @@ input[type=radio]:checked::before {
 	transform: rotate(40deg);
 	/* rotate car sinon la checkmark est à un angle droit*/
 	transition: .3s;
-
 }
 
 /* menus déroulants */
@@ -305,9 +315,9 @@ input[type=date] {
 	/* on retire la fleche de base pour rajouter la notre */
 
 	font-family: 'Overpass', sans-serif;
-	width: 10%;
+	width: 17%;
 	overflow: auto;
-	border: 2px solid #E0E2EE;
+	border: 2px solid #e0e2ee;
 	border-radius: 4px;
 	padding: 6px;
 	box-sizing: border-box;
@@ -316,7 +326,7 @@ input[type=date] {
 
 /* menu déroulant séléctionné */
 select:focus {
-	border-color: #CA1F29;
+	border-color: #ca1f29;
 }
 
 /* ajout de la flèche personnalisée au rond cliqué */

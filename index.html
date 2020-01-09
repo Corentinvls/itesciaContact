@@ -46,20 +46,24 @@
                 <!-- Bloc gestion -->
                 <div id="gestion" class="formations">
                     <h3>Gestion</h3>
+
+                    <!-- BAC+2 -->
                     <h4>BAC+2 :</h4>
                     <input type="radio" id="BTSCG" name="formations"> <label for="BTSCG"><strong>BTS CG</strong></label>
 
-
+                    <!-- BAC+3 -->
                     <h4>BAC+3 :</h4>
                     <strong>DCG</strong><br>
                     <input type="radio" id="DCGL1" name="formations"><label for="DCGL1">Entrée en L1</label>
                     <input type="radio" id="DCGL2" name="formations"><label for="DCGL2">Entrée en L2</label>
 
+                    <!-- BAC+4 -->
                     <h4>BAC+4 :</h4>
                     <strong>Contrôleur de Gestion</strong><br>
                     <input type="radio" id="CGL3" name="formations"><label for="CGL3">Entrée en L3</label>
                     <input type="radio" id="CGM1" name="formations"><label for="CGM1">Entrée en M1</label>
 
+                    <!-- BAC+5 -->
                     <h4>BAC+5 :</h4>
                     <input type="radio" id="DSCG" name="formations"><label for="DSCG"><strong>DSCG</strong> (Entrée en
                         M1)</label>
@@ -68,6 +72,8 @@
                 <!-- Bloc management -->
                 <div id="management" class="formations">
                     <h3>Management</h3>
+                    
+                    <!-- BAC+4 -->
                     <h4>BAC+4 :</h4>
                     <strong>Responsable de systèmes de management QHSE</strong><br>
                     <input type="radio" id="QHSEL3" name="formations"><label for="QHSEL3">Entrée en L3</label>
@@ -78,6 +84,7 @@
                     <input type="radio" id="RRHL3" name="formations"><label for="RRHL3">Entrée en L3</label>
                     <input type="radio" id="RRHM1" name="formations"><label for="RRHM1">Entrée en M1</label>
 
+                    <!-- BAC+5 -->
                     <h4>BAC+5 :</h4>
                     <input type="radio" id="MQPI" name="formations"><label for="MQPI"><strong>Manager Qualité et
                             Processus Intelligents</strong> (Entrée en M2)</label>
@@ -86,6 +93,8 @@
                 <!-- Bloc informatique -->
                 <div id="informatique" class="formations">
                     <h3>Informatique</h3>
+
+                    <!-- BAC+2 -->
 
                     <h4>BAC+2 :</h4>
                     <input type="radio" id="SIO" name="formations"> <label for="SIO"><strong>BTS SIO, option SISR ou
@@ -101,6 +110,7 @@
                     <input type="radio" id="CODC1" name="formations"><label for="CODC1">à Cergy</label>
                     <input type="radio" id="CODP1" name="formations"><label for="CODP1">à Paris</label>
 
+                    <!-- BAC+3 -->
                     <h4>BAC+3 (en 1 an) :</h4>
                     <input type="radio" id="LIG" name="formations"><label for="LIG"><strong>Licence d’Informatique
                             générale</strong></label>
@@ -112,11 +122,13 @@
                     <em>En temps plein</em> (payant)
                     <input type="radio" id="CP3" name="formations"><label for="CP3">à Paris</label>
 
+                    <!-- BAC+5 -->
                     <h4>BAC+5 :</h4>
                     <strong>Manager en Ingénierie Informatique</strong>
                     <br>
                     <input type="radio" id="IL3" name="formations"><label for="IL3"><em>entrée en L3</em></label>
                     <br>
+
                     <strong>entrée en M1, spécialisation :</strong>
                     <ul>
                         <li><input type="radio" id="MSCC" name="formations"><label for="MSCC">MSc Cybersécurité</label>
@@ -156,7 +168,7 @@
                 <!-- Bloc formations -->
                 <div id="continue" class="formations">
                     <h3>Formation continue - VAE</h3>
-
+                    <!-- Controleur de gestion -->
                     <label id="CDGLabel"><strong>Contrôleur de Gestion</strong></label>
                     <input type="radio" id="CDGVAE" name="formations" value="VAE">
                     <label for="CDGVAE">VAE</label>
@@ -164,6 +176,7 @@
                     <label for="CDGPT">Part-time</label>
                     <br />
 
+                    <!-- Responsable management -->
                     <label id="RMQHSELabel"><strong>Responsable Management QHSE : </strong></label>
                     <input type="radio" id="RMQHSEVAE" name="formations" value="VAE">
                     <label for="RMQHSEVAE">VAE</label>
@@ -171,24 +184,29 @@
                     <label for="RMQHSEPT">Part-time</label>
                     <br />
 
+                    <!-- Manager en Ingénierie Informatique -->
                     <label id="MIILabel"><strong>Manager en Ingénierie Informatique : </strong></label>
                     <input type="radio" id="MIIVAE" name="formations" value="VAE">
                     <label for="MIIVAE">VAE</label>
                     <input type="radio" id="MIIPT" name="formations" value="Part-time">
                     <label for="MIIPT">Part-time</label>
                     <br />
-                    <label id="BALabel"><strong>Business Analyst </strong></label>
+
+                    <!-- Business Analyst -->
+                    <label id="BALabel"><strong>Business Analyst :</strong></label>
                     <input type="radio" id="BAPT" name="formations" value="Part-time">
                     <label for="BAPT">Part-time</label>
                     <br />
 
+                    <!-- Manager Sécurité -->
                     <label id="MSRILabel"><strong>Manager de la sécurité des risques de
-                            l’information</strong></label>
+                            l’information : </strong></label>
                     <input type="radio" id="MSRIPT" name="formations" value="Part-time">
                     <label for="MSRIPT">Part-time</label>
 
                     <h4>Votre situation</h4>
 
+                    <!-- Salarié -->
                     <input type="radio" id="employee" name="formations">
                     <label for="employee">Salarié(e), de l’entreprise : </label>
                     <input type="text" id="employeeCompany" name="formations">
@@ -199,10 +217,12 @@
                     <label for="seeker">Demandeur d’emploi</label>
                     <br />
 
-                    <!-- Demandeur d'emploi-->
+                    <!-- Particulier-->
                     <input type="radio" id="individuals" name="formations">
                     <label for="individuals">Particulier </label>
                     <br />
+
+                    <!-- Autre -->
                     <input type="radio" id="other" name="formations">
                     <label for="other">Autre : </label>
                     <input type="text" id="otherField" name="formations">
@@ -260,6 +280,7 @@
 
             <h2>Votre scolarité :</h2>
             <label id="gradeLabel" for="grade">Niveau de formation actuel : </label>
+            <!-- menu de séléction du niveau de formation -->
             <select id="grade" name="grade">
                 <option value="CAP, BEP">CAP, BEP</option>
                 <option value="Bac">Baccalauréat</option>
@@ -271,12 +292,15 @@
                 <option value="Autre">Autre</option>
             </select>
             <br />
+
             <label id="gradeOther" for="gradeOtherField">Autre : </label>
             <input type="text" id="gradeOtherField">
             <br />
+
             <label id="lastSchool" for="lastSchoolField">Etablissement actuel (nom et ville) : </label>
             <input type="text" id="lastSchoolField">
             <br />
+
             <label id="lastDegree" for="lastDegreeField">Dernier diplôme obtenu : </label>
             <input type="text" id="lastDegreeField">
 
@@ -285,6 +309,7 @@
             <label id="secondChoice" for="secondChoiceField">N°2 : </label>
             <input type="text" id="secondChoiceField">
             <label id="secondGradeLabel" for="secondGrade">Niveau d'entrée : </label>
+            <!-- menu de séléction du niveau d'entrée -->
             <select id="secondGrade" name="secondGrade">
                 <option value="L1">L1</option>
                 <option value="L2">L2</option>
@@ -296,6 +321,7 @@
             <label id="thirdChoice" for="thirdChoiceField">N°3 : </label>
             <input type="text" id="thirdChoiceField">
             <label id="thirdGradeLabel" for="thirdGrade">Niveau d'entrée : </label>
+            <!-- menu de séléction du niveau d'entrée -->
             <select id="thirdGrade" name="thirdGrade">
                 <option value="L1">L1</option>
                 <option value="L2">L2</option>
@@ -323,6 +349,7 @@
 
     </section>
 
+    <!-- Bouton d'envoi du formulaire-->
     <div id="wrap-bouton">
         <input type="submit" form="formcontact" id="envoi">
     </div>
